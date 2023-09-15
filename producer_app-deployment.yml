@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: producer_app
+  namespace: kafka
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: producer_app
+  template:
+    metadata:
+      labels:
+        app: producer_app
+    spec:
+      containers:
+        - name: producer_app
+          image: diwelle/producer_app:producer_app
+          
+
