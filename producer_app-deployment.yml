@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: producer-app
-          image: diwelle/producer_app:producer_app
+          image: diwelle/producer-app:producer-app
           
 
