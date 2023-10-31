@@ -4,4 +4,4 @@ COPY product.py .
 
 RUN pip install confluent-kafka
 
-CMD ["python3", "product.py"]
+CMD ["python", "product.py"]
