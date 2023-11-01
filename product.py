@@ -1,6 +1,6 @@
 from confluent_kafka import Producer
 import socket
-conf = {'bootstrap.servers': "my-kafka-0.my-kafka-headless.kafka.svc.cluster.localhost:9092",
+conf = {'bootstrap.servers': "my-kafka-0.my-kafka-headless.kafka.svc.cluster.local:9092",
         'client.id': socket.gethostname()}
 
 producer = Producer(conf)
