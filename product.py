@@ -7,5 +7,5 @@ producer = Producer(conf)
 topic = "test"
 for i in range(0,10):
     
-  producer.produce(topic, key="messageeeeeeee"+str(i), value="HELLO"+str(i))
+  producer.produce(topic, key="messageeeeeeeealorsquoideneuf"+str(i), value="HELLO"+str(i))
   producer.flush()
